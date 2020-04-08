@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2020-04-08 16:05:21
+  people: 1
+  costumer: one
+  restaurant: one
+
+two:
+  date: 2020-04-08 16:05:21
+  people: 1
+  costumer: two
+  restaurant: two
