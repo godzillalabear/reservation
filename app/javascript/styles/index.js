@@ -1,3 +1,5 @@
 // index.js
 
-import './restaurant_index.scss'
+
+
+import './restaurants.scss'
