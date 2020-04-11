@@ -3,3 +3,4 @@
 
 
 import './restaurants.scss'
+import './application.scss'
