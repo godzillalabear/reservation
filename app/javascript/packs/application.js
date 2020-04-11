@@ -10,11 +10,11 @@ require("channels")
 
 
 require("bootstrap")
-require("styles")
+require("stylesheet")
 
 global.toastr = require("toastr")
 
-import "../stylesheets/application"
+import "../stylesheet/application.scss"
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

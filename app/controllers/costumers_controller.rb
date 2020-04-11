@@ -1,2 +1,3 @@
 class CostumersController < ApplicationController
+  
 end
