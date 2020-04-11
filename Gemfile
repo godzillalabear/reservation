@@ -7,6 +7,7 @@ gem 'foreman', '~> 0.87.1'
 
 gem 'devise', '~> 4.7', '>= 4.7.1'
 gem 'rails_admin', '~> 2.0.2'
+gem 'cancancan', '~> 3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
