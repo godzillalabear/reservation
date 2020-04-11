@@ -16,13 +16,17 @@
 	</head>
 	<body>
 		
-		<h1>home</h1>
-		<% if current_user.nil? %>
-			<%= link_to new_user_session_path, class: 'login-button' do %>Sign in<% end %>
-		<% else %>
-			<%= link_to restaurants_path, class: 'login-button' do %>Go see Restaurants<% end %>
-			<%= link_to destroy_user_session_path, method: :delete do %>Log out<% end %>
-		<% end %>
+		<div class="hp_title">
+			<h1>HOME</h1>
+		</div>
+		<div class="user_nb">
+			<% if current_user.nil? %>
+				<%= link_to new_user_session_path, class: 'login-button' do %>Sign in<% end %>
+			<% else %>
+				<%= link_to restaurants_path, class: 'login-button' do %>Go see Restaurants<% end %>
+				<%= link_to destroy_user_session_path, method: :delete do %>Log out<% end %>
+			<% end %>		
+		</div>
 
 
     <!-- Optional JavaScript -->
