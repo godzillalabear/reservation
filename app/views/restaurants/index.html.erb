@@ -30,6 +30,11 @@
 		  <%= link_to('Login', new_user_session_path)  %>  
 
 		<% end %>
+		<div>
+			<% if current_user.superadmin_role? || current_user.supervisor_role? %>
+				<p>Visible only for superadmins and supervisors! </p>
+			<% end %>
+		</div>
 		<div class="container">
 			<div class="row">
 				
