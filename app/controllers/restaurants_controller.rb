@@ -5,4 +5,8 @@ class RestaurantsController < ApplicationController
   end
   def show
   end
+
+  def new
+    redirect_to admin_path
+  end
 end
