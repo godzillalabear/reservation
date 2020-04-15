@@ -40,37 +40,23 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				
-				<div class="col-3">
-					<div class="card" >
-					    <img src="https://margaret.tw/wp-content/uploads/nEO_IMG_DSC09287-1.jpg" class="card-img-top" alt="...">
-					    <div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-					    </div>
+				<% @restaurants.each do |restaurant|%>
+					<div class="col-6 mb-3">
+						<div class="card-group">
+							<div class="card" >
+							    <img src="https://picsum.photos/300/200?random=1" class="card-img-top" alt="...">
+							    <div class="card-body">
+									<h6 class="card-title"><%= restaurant.name %></h6>
+									<p class="card-text mb-0">Address: </p>
+									<p class="card-text"><%= restaurant.address %></p>
+									<p class="card-text mb-0">Phone: </p>
+									<p class="card-text"><%= restaurant.phone %></p>
+									<a href="#" class="btn btn-primary">Go somewhere</a>
+							    </div>
+							</div>
+						</div>
 					</div>
-				</div>
-				<!-- <div class="col-3">
-					<div class="card" >
-					    <img src="https://d1ralsognjng37.cloudfront.net/73bcc85f-da0f-4beb-b463-839315399a0d.jpeg" class="card-img-top" alt="...">
-					    <div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-					    </div>
-					</div>
-				</div>
-				<div class="col-3">
-					<div class="card" >
-					    <img src="https://media-cdn.tripadvisor.com/media/photo-s/12/e8/bb/fd/ven-a-fridays-y-disfruta.jpg" class="card-img-top" alt="...">
-					    <div class="card-body">
-							<h5 class="card-title">Card title</h5>
-							<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-							<a href="#" class="btn btn-primary">Go somewhere</a>
-					    </div>
-					</div>
-				</div> -->
+				<% end %>
 			</div>
 		</div>
 
