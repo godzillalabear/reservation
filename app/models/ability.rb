@@ -26,6 +26,8 @@ class Ability
       end
       if user.supervisor_role?
         can :manage, Restaurant
+        can :access, :rails_admin
+        can :read, :dashboard         # allow access to dashboard
       end
 
 

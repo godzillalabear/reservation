@@ -7,6 +7,6 @@ class RestaurantsController < ApplicationController
   end
 
   def new
-    redirect_to admin_path
+    redirect_to rails_admin.new_path('restaurant')
   end
 end
