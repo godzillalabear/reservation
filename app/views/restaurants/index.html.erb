@@ -2,7 +2,7 @@
 
 
 	<body>
-		<div class="rsr_title">
+		<div class="rsr-title">
 			<h1>RESTAURANTS</h1>
 		</div>
 		<% if user_signed_in? %>
@@ -37,7 +37,7 @@
 									<p class="card-text"><%= restaurant.address %></p>
 									<p class="card-text mb-0">Phone: </p>
 									<p class="card-text"><%= restaurant.phone %></p>
-									<a href="#" class="btn rsr-btn">Reserve a meal!</a>
+									<%= link_to( "Reserve a meal!", new_reserve_record_path, :class => "btn rsr-btn")%>
 							    </div>
 							</div>
 						</div>
