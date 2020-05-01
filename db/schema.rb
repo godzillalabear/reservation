@@ -10,7 +10,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_04_12_134842) do
+ActiveRecord::Schema.define(version: 2020_04_30_155835) do
+
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "costumers", force: :cascade do |t|
     t.string "name"
@@ -23,8 +26,8 @@ ActiveRecord::Schema.define(version: 2020_04_12_134842) do
     t.date "date"
     t.time "time"
     t.integer "people"
-    t.integer "costumer_id", null: false
-    t.integer "restaurant_id", null: false
+    t.bigint "costumer_id", null: false
+    t.bigint "restaurant_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["costumer_id"], name: "index_reserve_records_on_costumer_id"
